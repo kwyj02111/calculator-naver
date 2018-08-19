@@ -57,6 +57,15 @@ function Calculator() {
             return;
         }
 
+        if(_checkComplete){
+            elem.opExpression.empty().append('0');
+            elem.calcResult.empty();
+            _inputNum = '';
+            _viewingOp = '';
+            _opExpression = [];
+            _checkComplete = false;
+        }
+
         if(_inputNum === ''){
             _inputNum = '0';
         }
