@@ -10,13 +10,13 @@
 
 .calc-header-container {
     width: 100%;
-    height: 100px;
+    height: 125px;
 }
 
 .calc-text-container {
     float: left;
     width: 200px;
-    height: 100%;
+    height: 125px;
     color: #000000;
     border: 1px solid #dcdcda;
     padding: 5px;
@@ -39,17 +39,21 @@
 
 .calc-result {
     width: 100%;
-    height: 20px;
+    height: 45px;
     color: #147130;
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-    line-height: 20px;
+    line-height: 1.4;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: break-all;
+    white-space: pre-wrap;
 }
 
 .calc-reset-btn {
     width: 70px;
-    height: 100px;
+    height: 125px;
     background-color: #00c73c;
     box-shadow: 1px 1px 3px 0 rgba(0,0,0,.3);
     font-size: 20px;

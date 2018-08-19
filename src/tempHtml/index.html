@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        @@calculatorCss
+
+        <title>Naver Calculator</title>
+    </head>
+    <body>
+
+        <div id="calcContainer" class="calc-container">
+            <div class="calc-header-container">
+                <div class="calc-text-container">
+                    <div class="calc-op-expression" data-elem="opExpression">0</div>
+                    <div class="calc-result" data-elem="calcResult"></div>
+                </div>
+                <button class="calc-reset-btn" data-elem="reset">R</button>
+            </div>
+
+            <div class="calc-btn-container">
+                <div class="calc-num-btn-container">
+                    <button class="calc-num-btn" data-num="1" data-elem="num">1</button>
+                    <button class="calc-num-btn" data-num="2" data-elem="num">2</button>
+                    <button class="calc-num-btn calc-right-btn" data-num="3" data-elem="num">3</button>
+                    <button class="calc-num-btn" data-num="4" data-elem="num">4</button>
+                    <button class="calc-num-btn" data-num="5" data-elem="num">5</button>
+                    <button class="calc-num-btn calc-right-btn" data-num="6" data-elem="num">6</button>
+                    <button class="calc-num-btn" data-num="7" data-elem="num">7</button>
+                    <button class="calc-num-btn" data-num="8" data-elem="num">8</button>
+                    <button class="calc-num-btn calc-right-btn" data-num="9" data-elem="num">9</button>
+                    <button class="calc-num-decimal-btn" data-elem="decimal">.</button>
+                    <button class="calc-num-btn" data-num="0" data-elem="num">0</button>
+                    <button class="calc-num-complete-btn calc-right-btn" data-elem="complete">=</button>
+                </div>
+
+                <div class="calc-operation-btn-container">
+                    <button class="calc-operation-btn" data-op="add" data-elem="operation">
+                        +
+                    </button>
+                    <button class="calc-operation-btn" data-op="sub" data-elem="operation">
+                        -
+                    </button>
+                    <button class="calc-operation-btn" data-op="multi" data-elem="operation">
+                        x
+                    </button>
+                    <button class="calc-operation-btn" data-op="div" data-elem="operation">
+                        /
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        @@calculatorJs
+    </body>
+</html>
